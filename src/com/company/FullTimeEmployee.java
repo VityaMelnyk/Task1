@@ -1,6 +1,6 @@
 package com.company;
 
-public class FullTimeEmployee {
+public class FullTimeEmployee implements IAccounting{
     private  String name;
     private  double salary;
 //getter setters constructors
@@ -37,4 +37,8 @@ public class FullTimeEmployee {
                 '}';
     }
 
+    @Override
+    public double getMounthSalary() {
+        return this.getSalary();
+    }
 }
